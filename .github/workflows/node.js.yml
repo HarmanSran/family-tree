@@ -24,6 +24,7 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
+    - run: cd ./family-tree
     - run: npm ci
     - run: npm run lint
     - run: npm test
