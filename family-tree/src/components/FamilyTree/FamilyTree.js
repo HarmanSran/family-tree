@@ -10,31 +10,45 @@ const options = {
       direction: 'DU',
     },
   },
+  edges: {
+    smooth: true,
+    arrows: 'from',
+  },
+  physics: {
+    enabled: true,
+  },
 };
 
-const FamilyTree = ({ data }) => {
-  // eslint-disable-next-line no-console
-  console.log(data);
-  return (
-    <div className="family-tree-container">
-      <VisNetworkReactComponent
-        data={data}
-        options={options}
-      />
-    </div>
-  );
+const augmentData = (data) => {
+  const edges = data.edges.map((edge) => {
+    if (edge.label === 'husband' || edge.label === 'wife') {
+      return ({ ...edge, smooth: { type: 'curvedCW', roundness: 0.2 } });
+    }
+    return edge;
+  });
+  return { nodes: data.nodes, edges };
 };
+
+const FamilyTree = ({ data }) => (
+  <div className="family-tree-container">
+    <VisNetworkReactComponent
+      data={augmentData(data)}
+      options={options}
+    />
+  </div>
+);
 
 FamilyTree.propTypes = {
   data: PropTypes.exact({
     nodes: PropTypes.arrayOf(PropTypes.shape({
       id: PropTypes.number.isRequired,
       label: PropTypes.string.isRequired,
+      level: PropTypes.number.isRequired,
     })).isRequired,
     edges: PropTypes.arrayOf(PropTypes.shape({
       from: PropTypes.number.isRequired,
       to: PropTypes.number.isRequired,
-      label: PropTypes.string.isRequired,
+      label: PropTypes.oneOf(['father', 'mother', 'husband', 'wife']).isRequired,
     })).isRequired,
   }).isRequired,
 };

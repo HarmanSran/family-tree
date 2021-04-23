@@ -15,7 +15,7 @@ FamilyTreeContainer.propTypes = {
     mother: PropTypes.number,
     husband: PropTypes.number,
     wife: PropTypes.number,
-    siblings: PropTypes.arrayOf(PropTypes.number),
+    // siblings: PropTypes.arrayOf(PropTypes.number),
   })).isRequired,
 };
 
