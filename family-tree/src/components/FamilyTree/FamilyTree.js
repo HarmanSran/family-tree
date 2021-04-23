@@ -12,17 +12,36 @@ const options = {
   },
   edges: {
     smooth: true,
-    arrows: 'from',
+  },
+  nodes: {
+    shape: 'box',
+    color: 'rgba(28, 124, 221, 0.9)',
+    font: {
+      color: '#fff',
+    },
+  },
+  interaction: {
+    dragNodes: false,
   },
   physics: {
     enabled: true,
+    hierarchicalRepulsion: {
+      centralGravity: 0.0,
+      springLength: 250,
+      springConstant: 0.01,
+      nodeDistance: 200,
+      damping: 0.09,
+    },
+    solver: 'hierarchicalRepulsion',
   },
 };
 
 const augmentData = (data) => {
   const edges = data.edges.map((edge) => {
     if (edge.label === 'husband' || edge.label === 'wife') {
-      return ({ ...edge, smooth: { type: 'curvedCW', roundness: 0.2 } });
+      return ({
+        ...edge, label: undefined,
+      });
     }
     return edge;
   });
