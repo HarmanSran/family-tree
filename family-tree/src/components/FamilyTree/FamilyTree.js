@@ -4,6 +4,14 @@ import VisNetworkReactComponent from 'vis-network-react';
 
 import './FamilyTree.css';
 
+const options = {
+  layout: {
+    hierarchical: {
+      direction: 'DU',
+    },
+  },
+};
+
 const FamilyTree = ({ data }) => {
   // eslint-disable-next-line no-console
   console.log(data);
@@ -11,6 +19,7 @@ const FamilyTree = ({ data }) => {
     <div className="family-tree-container">
       <VisNetworkReactComponent
         data={data}
+        options={options}
       />
     </div>
   );

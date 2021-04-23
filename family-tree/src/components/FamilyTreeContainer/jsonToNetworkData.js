@@ -1,4 +1,16 @@
-const getNodes = (data) => Object.keys(data).map((name) => ({ label: name, id: data[name].id }));
+const getNodes = (data) => {
+  const levels = {};
+
+  Object.values(data).forEach(({ id, father, mother }) => {
+    if (levels[id] === undefined) {
+      levels[id] = 1;
+    }
+    levels[father] = levels[id] + 1;
+    levels[mother] = levels[id] + 1;
+  });
+
+  return Object.keys(data).map((name) => ({ label: name, id: data[name].id, level: levels[data[name].id] }));
+};
 
 const getEdges = (data) => {
   const edges = [];
@@ -13,6 +25,10 @@ const getEdges = (data) => {
 
 /**
  * Maps tree.json shape to Visjs network shape
+ *
+ * Hierarchy levels are based on the first entry
+ *
+ * Children must be defined BEFORE parents
  */
 const jsonToNetworkData = (data) => ({ nodes: getNodes(data), edges: getEdges(data) });
 

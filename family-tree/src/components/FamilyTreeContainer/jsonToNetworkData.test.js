@@ -9,9 +9,9 @@ describe('jsonToNetworkData', () => {
     };
     const { nodes, edges } = jsonToNetworkData(data);
     expect(nodes).toEqual([
-      { label: 'Harry Potter', id: 0 },
-      { label: 'James Potter', id: 1 },
-      { label: 'Lily Potter', id: 2 },
+      { label: 'Harry Potter', id: 0, level: 1 },
+      { label: 'James Potter', id: 1, level: 2 },
+      { label: 'Lily Potter', id: 2, level: 2 },
     ]);
     expect(edges).toEqual([
       { from: 1, to: 0, label: 'father' },
