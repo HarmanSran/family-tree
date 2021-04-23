@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Example; https://github.com/visjs/vis-network-react/blob/master/example/src/App.js
 import VisNetworkReactComponent from 'vis-network-react';
 
 import './FamilyTree.css';
