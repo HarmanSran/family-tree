@@ -1,0 +1,5 @@
+{
+  "Harry Potter": { "id": 0, "father": 1, "mother": 2 },
+  "James Potter": { "id": 1, "wife": 2 },
+  "Lily Potter": { "id": 2, "husband": 1}
+}

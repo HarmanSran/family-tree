@@ -24,5 +24,9 @@ module.exports = {
 
     // I prefer .js
     'react/jsx-filename-extension': 'off',
+
+    'linebreak-style': 'off',
+
+    'max-len': 'off',
   },
 };
