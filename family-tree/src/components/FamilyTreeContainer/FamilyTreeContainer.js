@@ -2,14 +2,11 @@ import PropTypes from 'prop-types';
 import FamilyTree from '../FamilyTree/FamilyTree';
 import jsonToNetworkData from './jsonToNetworkData';
 
-const FamilyTreeContainer = ({ json }) => {
-  const data = jsonToNetworkData(json);
-  return (
-    <FamilyTree
-      data={data}
-    />
-  );
-};
+const FamilyTreeContainer = ({ json }) => (
+  <FamilyTree
+    data={jsonToNetworkData(json)}
+  />
+);
 
 FamilyTreeContainer.propTypes = {
   json: PropTypes.objectOf(PropTypes.shape({
