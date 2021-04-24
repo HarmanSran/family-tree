@@ -49,7 +49,7 @@ const augmentData = (data) => {
 };
 
 const FamilyTree = ({ data }) => (
-  <div className="family-tree-container">
+  <div className="canvas-wrapper">
     <VisNetworkReactComponent
       data={augmentData(data)}
       options={options}

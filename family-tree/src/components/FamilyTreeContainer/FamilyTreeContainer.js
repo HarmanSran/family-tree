@@ -1,11 +1,16 @@
 import PropTypes from 'prop-types';
+import Container from 'react-bootstrap/Container';
 import FamilyTree from '../FamilyTree/FamilyTree';
+import Toolbar from '../Toolbar/Toolbar';
 import jsonToNetworkData from './jsonToNetworkData';
 
 const FamilyTreeContainer = ({ json }) => (
-  <FamilyTree
-    data={jsonToNetworkData(json)}
-  />
+  <Container style={{ height: 'calc(100vh - 64px' }}>
+    <Toolbar />
+    <FamilyTree
+      data={jsonToNetworkData(json)}
+    />
+  </Container>
 );
 
 FamilyTreeContainer.propTypes = {
