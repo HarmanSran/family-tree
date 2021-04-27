@@ -1,0 +1,48 @@
+{
+  "0": {
+    "relations": {
+      "father": 1,
+      "mother": 2
+    }
+  },
+  "1": {
+    "relations": {
+      "father": 3,
+      "mother": 4,
+      "wife": 2
+    }
+  },
+  "2": {
+    "relations": {
+      "father": 5,
+      "mother": 6,
+      "husband": 1
+    }
+  },
+  "3": {
+    "relations": {
+      "wife": 4
+    }
+  },
+  "4": {
+    "relations": {
+      "husband": 3
+    }
+  },
+  "5": {
+    "relations": {
+      "wife": 6
+    }
+  },
+  "6": {
+    "relations": {
+      "husband": 5
+    }
+  },
+  "7": {
+    "relations": {
+      "father": 1,
+      "mother": 2
+    }
+  }
+}

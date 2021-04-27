@@ -1,48 +1,86 @@
 {
-  "Harry Potter": {
-    "id": 0,
-    "father": 1,
-    "mother": 2,
-    "gender": "M"
+  "1": {
+    "name": "James Potter",
+    "relations": {
+      "wife": 2,
+      "father": 3,
+      "mother": 4
+    },
+    "metadata": {
+      "gender": "M",
+      "birth": "1960-03-27",
+      "death": "1981-10-31"
+    }
   },
-  "Gina Potter": {
-    "id": 7,
-    "father": 1,
-    "mother": 2,
-    "gender": "F"
+  "0": {
+    "name": "Harry Potter",
+    "relations": {
+      "father": 1,
+      "mother": 2
+    },
+    "metadata": {
+      "gender": "M",
+      "description": "The boy who lived",
+      "birth": "1980-07-31"
+    }
   },
-  "James Potter": {
-    "id": 1,
-    "wife": 2,
-    "father": 3,
-    "mother": 4,
-    "gender": "M"
+  "2": {
+    "name": "Lily Potter",
+    "relations": {
+      "husband": 1,
+      "father": 5,
+      "mother": 6
+    },
+    "metadata": {
+      "gender": "F",
+      "birth": "1960-01-30",
+      "death": "1981-10-31"
+    }
   },
-  "Lily Potter": {
-    "id": 2,
-    "husband": 1,
-    "father": 5,
-    "mother": 6,
-    "gender": "F"
+  "3": {
+    "name": "Fleamont Potter",
+    "relations": {
+      "wife": 4
+    },
+    "metadata": {
+      "gender": "M"
+    }
   },
-  "Fleamont Potter": {
-    "id": 3,
-    "wife": 4,
-    "gender": "M"
+  "4": {
+    "name": "Euphemia Potter",
+    "relations": {
+      "husband": 3
+    },
+    "metadata": {
+      "gender": "F"
+    }
   },
-  "Euphemia Potter": {
-    "id": 4,
-    "husband": 3,
-    "gender": "F"
+  "5": {
+    "name": "Mr. Evans",
+    "relations": {
+      "wife": 6
+    },
+    "metadata": {
+      "gender": "M"
+    }
   },
-  "Mr. Evans": {
-    "id": 5,
-    "wife": 6,
-    "gender": "M"
+  "6": {
+    "name": "Mrs. Evans",
+    "relations": {
+      "husband": 5
+    },
+    "metadata": {
+      "gender": "F"
+    }
   },
-  "Mrs. Evans": {
-    "id": 6,
-    "husband": 5,
-    "gender": "F"
+  "7": {
+    "name": "Gina Potter",
+    "relations": {
+      "father": 1,
+      "mother": 2
+    },
+    "metadata": {
+      "gender": "F"
+    }
   }
 }
