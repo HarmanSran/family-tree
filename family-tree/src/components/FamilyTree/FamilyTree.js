@@ -22,6 +22,9 @@ const options = {
   },
   interaction: {
     dragNodes: false,
+    hover: true,
+    navigationButtons: true,
+    keyboard: false,
   },
   physics: {
     enabled: true,
@@ -36,29 +39,24 @@ const options = {
   },
 };
 
-const augmentData = (data) => {
-  const edges = data.edges.map((edge) => {
-    if (edge.label === 'husband' || edge.label === 'wife') {
-      return ({
-        ...edge, label: undefined,
-      });
-    }
-    return edge;
-  });
-  return { nodes: data.nodes, edges };
+const augmentNetwork = (network) => {
+  const edges = network.edges.map((edge) => ({
+    ...edge, label: undefined,
+  }));
+  return { nodes: network.nodes, edges };
 };
 
-const FamilyTree = ({ data }) => (
+const FamilyTree = ({ network }) => (
   <div className="canvas-wrapper">
     <VisNetworkReactComponent
-      data={augmentData(data)}
+      data={augmentNetwork(network)}
       options={options}
     />
   </div>
 );
 
 FamilyTree.propTypes = {
-  data: PropTypes.exact({
+  network: PropTypes.exact({
     nodes: PropTypes.arrayOf(PropTypes.shape({
       id: PropTypes.number.isRequired,
       label: PropTypes.string.isRequired,
