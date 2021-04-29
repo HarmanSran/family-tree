@@ -3,6 +3,9 @@ import FamilyTreeContainer from './components/FamilyTreeContainer/FamilyTreeCont
 
 const FAMILY_TREE_FILE_PATH = 'data/tree.json';
 
+/**
+ * Ensures `tree.json` is readable and parses it as JSON
+ */
 const App = () => {
   const [familyTree, setFamilyTree] = useState(null);
   const [isFetchError, setIsFetchError] = useState(false);

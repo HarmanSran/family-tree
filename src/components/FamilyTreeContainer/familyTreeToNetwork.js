@@ -5,9 +5,9 @@ const parseId = (id) => parseInt(id, 10);
  *
  * Level is an integer that determine position (i.e. row) in family tree
  *
- * Level = 1 means bottom of tree (the newest children)
+ * Level = 1 means bottom row of tree (the newest children)
  *
- * Highest level is the oldest ancestor
+ * Highest level are the oldest ancestors (top row)
  *
  * @param {object} json From `tree.json`
  * @returns {object} levels
@@ -32,7 +32,7 @@ const getNodeLevels = (json) => {
 /**
  * Returns array containing nodes of the family tree
  *
- * Node shape:
+ * Returned node shapes:
  * `id` is a unique key (integer)
  * `level` is required (integer)
  * `details` contains everything about this person from `tree.json` (object)
@@ -48,7 +48,7 @@ const getNodes = (json) => {
 /**
  * Returns array containing edges of the family tree
  *
- * Edge shape:
+ * Returned edge shapes:
  * `from` is required (integer)
  * `to` is required (integer)
  * `label` is required (string)
