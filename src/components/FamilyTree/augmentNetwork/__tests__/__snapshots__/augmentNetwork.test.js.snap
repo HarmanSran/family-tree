@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`augmentNetwork augments nodes and edges as expected 1`] = `
+Object {
+  "edges": Array [
+    Object {
+      "color": undefined,
+      "from": 1,
+      "label": undefined,
+      "to": 0,
+    },
+    Object {
+      "color": undefined,
+      "from": 2,
+      "label": undefined,
+      "to": 0,
+    },
+    Object {
+      "color": "rgba(255, 192, 84)",
+      "from": 2,
+      "label": undefined,
+      "to": 1,
+    },
+    Object {
+      "color": undefined,
+      "from": 3,
+      "label": undefined,
+      "to": 1,
+    },
+    Object {
+      "color": undefined,
+      "from": 4,
+      "label": undefined,
+      "to": 1,
+    },
+    Object {
+      "color": "rgba(255, 192, 84)",
+      "from": 1,
+      "label": undefined,
+      "to": 2,
+    },
+    Object {
+      "color": undefined,
+      "from": 5,
+      "label": undefined,
+      "to": 2,
+    },
+    Object {
+      "color": undefined,
+      "from": 6,
+      "label": undefined,
+      "to": 2,
+    },
+    Object {
+      "color": "rgba(255, 192, 84)",
+      "from": 4,
+      "label": undefined,
+      "to": 3,
+    },
+    Object {
+      "color": "rgba(255, 192, 84)",
+      "from": 3,
+      "label": undefined,
+      "to": 4,
+    },
+    Object {
+      "color": "rgba(255, 192, 84)",
+      "from": 6,
+      "label": undefined,
+      "to": 5,
+    },
+    Object {
+      "color": "rgba(255, 192, 84)",
+      "from": 5,
+      "label": undefined,
+      "to": 6,
+    },
+    Object {
+      "color": undefined,
+      "from": 1,
+      "label": undefined,
+      "to": 7,
+    },
+    Object {
+      "color": undefined,
+      "from": 2,
+      "label": undefined,
+      "to": 7,
+    },
+  ],
+  "nodes": Array [
+    Object {
+      "color": "rgba(133, 222, 255)",
+      "id": 0,
+      "label": "Harry Potter
+1980 -",
+      "level": 1,
+    },
+    Object {
+      "color": "rgba(133, 222, 255)",
+      "id": 1,
+      "label": "James Potter
+1960 - 1981",
+      "level": 2,
+    },
+    Object {
+      "color": "rgba(255, 189, 248)",
+      "id": 2,
+      "label": "Lily Potter
+1960 - 1981",
+      "level": 2,
+    },
+    Object {
+      "color": "rgba(133, 222, 255)",
+      "id": 3,
+      "label": "Fleamont Potter",
+      "level": 3,
+    },
+    Object {
+      "color": "rgba(255, 189, 248)",
+      "id": 4,
+      "label": "Euphemia Potter",
+      "level": 3,
+    },
+    Object {
+      "color": "rgba(133, 222, 255)",
+      "id": 5,
+      "label": "Mr. Evans",
+      "level": 3,
+    },
+    Object {
+      "color": "rgba(255, 189, 248)",
+      "id": 6,
+      "label": "Mrs. Evans",
+      "level": 3,
+    },
+    Object {
+      "color": "rgba(255, 189, 248)",
+      "id": 7,
+      "label": "Gina Potter",
+      "level": 1,
+    },
+  ],
+}
+`;
