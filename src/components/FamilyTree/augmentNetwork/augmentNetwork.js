@@ -3,7 +3,7 @@ const augmentEdges = (network) => {
   return edges.map((edge) => ({
     ...edge,
     label: undefined,
-    color: edge.label === 'husband' || edge.label === 'wife' ? 'rgba(255, 192, 84)' : undefined,
+    color: ['husband', 'wife'].includes(edge.label) ? 'rgba(255, 117, 61)' : undefined,
   }));
 };
 
