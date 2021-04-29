@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import FamilyTree from '../FamilyTree/FamilyTree';
-import familyTreeToNetwork from './familyTreeToNetwork';
+import familyTreeToNetwork from './familyTreeToNetwork/familyTreeToNetwork';
 
 /**
  * Maps family tree to a network graph:

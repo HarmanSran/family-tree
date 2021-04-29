@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`familyTreeToNetwork maps from json data to visjs network shape 1`] = `
+Object {
+  "edges": Array [
+    Object {
+      "from": 1,
+      "label": "father",
+      "to": 0,
+    },
+    Object {
+      "from": 2,
+      "label": "mother",
+      "to": 0,
+    },
+    Object {
+      "from": 3,
+      "label": "father",
+      "to": 1,
+    },
+    Object {
+      "from": 4,
+      "label": "mother",
+      "to": 1,
+    },
+    Object {
+      "from": 2,
+      "label": "wife",
+      "to": 1,
+    },
+    Object {
+      "from": 5,
+      "label": "father",
+      "to": 2,
+    },
+    Object {
+      "from": 6,
+      "label": "mother",
+      "to": 2,
+    },
+    Object {
+      "from": 1,
+      "label": "husband",
+      "to": 2,
+    },
+    Object {
+      "from": 4,
+      "label": "wife",
+      "to": 3,
+    },
+    Object {
+      "from": 3,
+      "label": "husband",
+      "to": 4,
+    },
+    Object {
+      "from": 6,
+      "label": "wife",
+      "to": 5,
+    },
+    Object {
+      "from": 5,
+      "label": "husband",
+      "to": 6,
+    },
+    Object {
+      "from": 1,
+      "label": "father",
+      "to": 7,
+    },
+    Object {
+      "from": 2,
+      "label": "mother",
+      "to": 7,
+    },
+  ],
+  "nodes": Array [
+    Object {
+      "details": Object {
+        "relations": Object {
+          "father": 1,
+          "mother": 2,
+        },
+      },
+      "id": 0,
+      "level": 1,
+    },
+    Object {
+      "details": Object {
+        "relations": Object {
+          "father": 3,
+          "mother": 4,
+          "wife": 2,
+        },
+      },
+      "id": 1,
+      "level": 2,
+    },
+    Object {
+      "details": Object {
+        "relations": Object {
+          "father": 5,
+          "husband": 1,
+          "mother": 6,
+        },
+      },
+      "id": 2,
+      "level": 2,
+    },
+    Object {
+      "details": Object {
+        "relations": Object {
+          "wife": 4,
+        },
+      },
+      "id": 3,
+      "level": 3,
+    },
+    Object {
+      "details": Object {
+        "relations": Object {
+          "husband": 3,
+        },
+      },
+      "id": 4,
+      "level": 3,
+    },
+    Object {
+      "details": Object {
+        "relations": Object {
+          "wife": 6,
+        },
+      },
+      "id": 5,
+      "level": 3,
+    },
+    Object {
+      "details": Object {
+        "relations": Object {
+          "husband": 5,
+        },
+      },
+      "id": 6,
+      "level": 3,
+    },
+    Object {
+      "details": Object {
+        "relations": Object {
+          "father": 1,
+          "mother": 2,
+        },
+      },
+      "id": 7,
+      "level": 1,
+    },
+  ],
+}
+`;
