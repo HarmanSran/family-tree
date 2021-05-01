@@ -2,6 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import VisNetworkReactComponent from 'vis-network-react';
 import Fab from '@material-ui/core/Fab';
+import Tooltip from '@material-ui/core/Tooltip';
 import { makeStyles } from '@material-ui/core';
 import CenterFocusStrongIcon from '@material-ui/icons/CenterFocusStrong';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -42,22 +43,24 @@ const FamilyTree = ({ network }) => {
         options={options}
         getNetwork={(n) => setVisNetwork(n)}
       />
-      <Fab
-        className={`${classes.fab} ${classes.recenterFab}`}
-        color="primary"
-        aria-label="recenter"
-        onClick={handleRecenterClick}
-      >
-        <CenterFocusStrongIcon />
-      </Fab>
-      <Fab
-        className={`${classes.fab} ${classes.githubFab}`}
-        color="default"
-        aria-label="recenter"
-        onClick={() => console.log('Github clicked')}
-      >
-        <GitHubIcon />
-      </Fab>
+      <Tooltip title="Recenter Family Tree" aria-label="recenter" placement="left">
+        <Fab
+          className={`${classes.fab} ${classes.recenterFab}`}
+          color="primary"
+          onClick={handleRecenterClick}
+        >
+          <CenterFocusStrongIcon />
+        </Fab>
+      </Tooltip>
+      <Tooltip title="Github" aria-label="info" placement="left">
+        <Fab
+          className={`${classes.fab} ${classes.githubFab}`}
+          color="default"
+          onClick={() => console.log('Github clicked')}
+        >
+          <GitHubIcon />
+        </Fab>
+      </Tooltip>
     </div>
   );
 };
