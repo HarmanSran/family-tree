@@ -21,8 +21,6 @@ const options = {
   interaction: {
     dragNodes: false,
     hover: true,
-    navigationButtons: true,
-    keyboard: false,
   },
   physics: {
     enabled: true,
