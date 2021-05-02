@@ -40,7 +40,8 @@
   "3": {
     "name": "Fleamont Potter",
     "relations": {
-      "wife": 4
+      "wife": 4,
+      "mother": 8
     },
     "metadata": {
       "gender": "M"
@@ -79,6 +80,13 @@
       "father": 1,
       "mother": 2
     },
+    "metadata": {
+      "gender": "F"
+    }
+  },
+  "8": {
+    "name": "Mrs. Potter",
+    "relations": {},
     "metadata": {
       "gender": "F"
     }

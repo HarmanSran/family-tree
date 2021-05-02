@@ -33,6 +33,11 @@ const augmentNodes = (network) => {
   }));
 };
 
+/**
+ * Enhances basic visjs network with some pretty features (e.g. colors, edge type, labels)
+ * @param {object} network - valid visjs network
+ * @returns valid visjs network
+ */
 const augmentNetwork = (network) => ({
   nodes: augmentNodes(network),
   edges: augmentEdges(network),
