@@ -50,7 +50,9 @@
   "4": {
     "name": "Euphemia Potter",
     "relations": {
-      "husband": 3
+      "husband": 3,
+      "father": 9,
+      "mother": 10
     },
     "metadata": {
       "gender": "F"
@@ -87,6 +89,24 @@
   "8": {
     "name": "Mrs. Potter",
     "relations": {},
+    "metadata": {
+      "gender": "F"
+    }
+  },
+  "9": {
+    "name": "Arnold Braithewaite",
+    "relations": {
+      "wife": 10
+    },
+    "metadata": {
+      "gender": "M"
+    }
+  },
+  "10": {
+    "name": "Arabella Smackle",
+    "relations": {
+      "husband": 9
+    },
     "metadata": {
       "gender": "F"
     }
