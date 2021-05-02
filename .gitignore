@@ -24,3 +24,7 @@ yarn-error.log*
 
 # IDE
 workspace.code-workspace
+
+# Ignore all tree data, except for demo
+/public/data/*
+!/public/data/tree.json
