@@ -1,7 +1,8 @@
 {
   "name": "family-tree",
   "version": "1.0.0",
-  "homepage": "https://HarmanSran.github.io/family-tree",
+  "homepage": ".",
+  "repository": "https://github.com/HarmanSran/family-tree",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",

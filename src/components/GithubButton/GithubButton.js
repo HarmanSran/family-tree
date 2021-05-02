@@ -2,8 +2,7 @@ import Fab from '@material-ui/core/Fab';
 import Tooltip from '@material-ui/core/Tooltip';
 import { makeStyles } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
-
-const GITHUB_REPO_URL = 'https://github.com/HarmanSran/family-tree';
+import { repository } from '../../../package.json';
 
 const useStyles = makeStyles({
   fab: {
@@ -26,7 +25,7 @@ const GithubButton = () => {
       <Fab
         className={`${classes.fab} ${classes.githubFab}`}
         color="default"
-        onClick={() => window.open(GITHUB_REPO_URL)}
+        onClick={() => window.open(repository)}
       >
         <GitHubIcon />
       </Fab>
