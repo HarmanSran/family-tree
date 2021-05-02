@@ -40,7 +40,7 @@ FamilyTree.propTypes = {
           mother: PropTypes.number,
         }).isRequired,
         metadata: PropTypes.shape({
-          gender: PropTypes.oneOf(['M', 'F']).isRequired,
+          gender: PropTypes.oneOf(['M', 'F']),
           birth: PropTypes.string,
           death: PropTypes.string,
         }).isRequired,
