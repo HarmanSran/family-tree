@@ -5,7 +5,7 @@ Uses [visjs network](https://visjs.github.io/vis-network/docs/network/) to rende
 # Demo
 Live demo: https://harmansran.github.io/family-tree/
 
-![family tree example](./example.png)
+![family tree example](./example.PNG)
 
 # Forking
 1. Clone this repository
