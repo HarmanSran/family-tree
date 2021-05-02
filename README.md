@@ -21,6 +21,26 @@ Live demo: https://harmansran.github.io/family-tree/
 * Object with stringified integer keys, and object values with shape:
   * `name` (string), `relations` (object), `metadata` (object) - all three required
   * `relations` and `metadata` keys must at least be empty objects (i.e. `{}`)
+* Available properties (all `relations` and `metadata` are optional)
+```
+{
+  "ID": {
+    "name": "<Name>",
+    "relations": {
+      "wife": <ID>,
+      "husband": <ID>,
+      "mother": <ID>,
+      "father": <ID>
+    },
+    "metadata": {
+      "gender": "<M|F>",
+      "birth": "YYYY-MM-DD",
+      "death": "YYYY-MM-DD",
+      "description": "<Description>"
+    }
+  }
+}
+```
 
 # Continuous Testing
 Testing (jest) and linting (eslint) workflow configured out of the box (see `<ROOT>/.github/workflows/test.yml`).
