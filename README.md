@@ -2,6 +2,11 @@
 
 Uses [visjs network](https://visjs.github.io/vis-network/docs/network/) to render a family tree.
 
+# Demo
+Live demo: https://harmansran.github.io/family-tree/
+
+![family tree example](./example.png)
+
 # Forking
 1. Clone this repository
 2. Replace `<ROOT>/public/data/tree.json` (see [tree.json Structure](#structure))
