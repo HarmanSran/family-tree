@@ -1,0 +1,94 @@
+{
+  "1": {
+    "name": "James Potter",
+    "relations": {
+      "wife": 2,
+      "father": 3,
+      "mother": 4
+    },
+    "metadata": {
+      "gender": "M",
+      "birth": "1960-03-27",
+      "death": "1981-10-31"
+    }
+  },
+  "0": {
+    "name": "Harry Potter",
+    "relations": {
+      "father": 1,
+      "mother": 2
+    },
+    "metadata": {
+      "gender": "M",
+      "description": "The boy who lived",
+      "birth": "1980-07-31"
+    }
+  },
+  "2": {
+    "name": "Lily Potter",
+    "relations": {
+      "husband": 1,
+      "father": 5,
+      "mother": 6
+    },
+    "metadata": {
+      "gender": "F",
+      "birth": "1960-01-30",
+      "death": "1981-10-31"
+    }
+  },
+  "3": {
+    "name": "Fleamont Potter",
+    "relations": {
+      "wife": 4,
+      "mother": 8
+    },
+    "metadata": {
+      "gender": "M"
+    }
+  },
+  "4": {
+    "name": "Euphemia Potter",
+    "relations": {
+      "husband": 3
+    },
+    "metadata": {
+      "gender": "F"
+    }
+  },
+  "5": {
+    "name": "Mr. Evans",
+    "relations": {
+      "wife": 6
+    },
+    "metadata": {
+      "gender": "M"
+    }
+  },
+  "6": {
+    "name": "Mrs. Evans",
+    "relations": {
+      "husband": 5
+    },
+    "metadata": {
+      "gender": "F"
+    }
+  },
+  "7": {
+    "name": "Gina Potter",
+    "relations": {
+      "father": 1,
+      "mother": 2
+    },
+    "metadata": {
+      "gender": "F"
+    }
+  },
+  "8": {
+    "name": "Mrs. Potter",
+    "relations": {},
+    "metadata": {
+      "gender": "F"
+    }
+  }
+}
