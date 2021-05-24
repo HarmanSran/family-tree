@@ -1,3 +1,5 @@
+[![Linting and Tests](https://github.com/HarmanSran/family-tree/actions/workflows/test.yml/badge.svg)](https://github.com/HarmanSran/family-tree/actions/workflows/test.yml)
+
 # Overview
 
 Uses [visjs network](https://visjs.github.io/vis-network/docs/network/) to render a family tree.
